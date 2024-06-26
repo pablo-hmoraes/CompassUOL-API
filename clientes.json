@@ -1,0 +1,37 @@
+[
+    {
+        "nome": "Maria Silva",
+        "sexo": "Feminino",
+        "dataNasc": "1985-04-23",
+        "idade": 39,
+        "cidade": "São Paulo"
+    },
+    {
+        "nome": "João Pereira",
+        "sexo": "Masculino",
+        "dataNasc": "1990-11-14",
+        "idade": 33,
+        "cidade": "Rio de Janeiro"
+    },
+    {
+        "nome": "Ana Oliveira",
+        "sexo": "Feminino",
+        "dataNasc": "2000-06-09",
+        "idade": 24,
+        "cidade": "Belo Horizonte"
+    },
+    {
+        "nome": "Carlos Souza",
+        "sexo": "Masculino",
+        "dataNasc": "1975-02-28",
+        "idade": 49,
+        "cidade": "Curitiba"
+    },
+    {
+        "nome": "Fernanda Costa",
+        "sexo": "Feminino",
+        "dataNasc": "1995-08-17",
+        "idade": 28,
+        "cidade": "Salvador"
+    }
+]

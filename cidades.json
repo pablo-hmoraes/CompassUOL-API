@@ -1,0 +1,42 @@
+[
+    {
+        "nome": "São Paulo",
+        "estado": "SP"
+    },
+    {
+        "nome": "Rio de Janeiro",
+        "estado": "RJ"
+    },
+    {
+        "nome": "Belo Horizonte",
+        "estado": "MG"
+    },
+    {
+        "nome": "Salvador",
+        "estado": "BA"
+    },
+    {
+        "nome": "Curitiba",
+        "estado": "PR"
+    },
+    {
+        "nome": "Porto Alegre",
+        "estado": "RS"
+    },
+    {
+        "nome": "Brasília",
+        "estado": "DF"
+    },
+    {
+        "nome": "Fortaleza",
+        "estado": "CE"
+    },
+    {
+        "nome": "Manaus",
+        "estado": "AM"
+    },
+    {
+        "nome": "Goiânia",
+        "estado": "GO"
+    }
+]

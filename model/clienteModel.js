@@ -47,7 +47,7 @@ clienteSchema.pre('save', function(next) {
     const sub = date.subtract(atual, nasc);
     this.idade = Math.floor(sub.toDays() / 365);
     next();
-})
+});
 
 const Cliente = mongoose.model('Cliente', clienteSchema);
 

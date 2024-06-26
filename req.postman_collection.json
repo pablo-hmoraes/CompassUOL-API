@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "af60a083-725b-4e64-bdca-6675795a96d9",
+		"name": "Requisições",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35975263"
+	},
+	"item": [
+		{
+			"name": "Cadastrar cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Giorgian De Arrascaeta\",\r\n    \"sexo\": \"Masculino\",\r\n    \"dataNasc\": \"1994-01-06\",\r\n    \"cidade\": \"Rio de Janeiro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/clientes/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar cliente pelo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/clientes/667c5a0fb3c7419e8ef165b9",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"667c5a0fb3c7419e8ef165b9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar cliente pelo nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/clientes/nome/maria-silva",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"nome",
+						"maria-silva"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar nome do cliente",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Maria da Silva\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/clientes/667c5a0fb3c7419e8ef165b9",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"667c5a0fb3c7419e8ef165b9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/clientes/667c5a0fb3c7419e8ef165b9",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"667c5a0fb3c7419e8ef165b9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar cidade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Xique-Xique\",\r\n    \"estado\": \"BA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/cidades/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cidades",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar cidade pelo nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/cidades/nome/belo-horizonte",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cidades",
+						"nome",
+						"belo-horizonte"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar cidade pelo estado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/cidades/estado/BA",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cidades",
+						"estado",
+						"BA"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

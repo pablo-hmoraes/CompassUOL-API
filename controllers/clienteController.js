@@ -4,13 +4,13 @@ const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 
 const filterObj = (obj, ...allowedFields) => {
-  const newObj = {};
-  Object.keys(obj).forEach(el => {
-    if (allowedFields.includes(el)) 
-      newObj[el] = obj[el];
-  });
+    const newObj = {};
+    Object.keys(obj).forEach(el => {
+        if (allowedFields.includes(el)) 
+        newObj[el] = obj[el];
+    });
 
-  return newObj;
+    return newObj;
 };
 
 exports.getClienteByName = catchAsync(async (req, res, next) => {   
@@ -55,20 +55,21 @@ exports.removeCliente = catchAsync(async (req, res, next) => {
 });
 
 exports.updateClienteName = catchAsync(async (req, res, next) => { 
-  const filter = filterObj(req.body, 'nome');
+    const filter = filterObj(req.body, 'nome');
 
-  const cliente = await Cliente.findById(req.params.id);
+    const cliente = await Cliente.findById(req.params.id);
 
-  if (!cliente) {
-    return next(new AppError('Não existe cliente com esse ID', 404));
-  }
+    if (!cliente) {
+        return next(new AppError('Não existe cliente com esse ID', 404));
+    }
 
-  cliente.nome = filter.nome;
-  cliente.save();
+    cliente.nome = filter.nome;
 
-  res.status(204).json({
-    status: 'No content'
-  });
+    cliente.save();
+    
+    res.status(204).json({
+        status: 'No content'
+    });
 
 });
 
