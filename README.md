@@ -47,9 +47,9 @@ no terminal que a aplicação irá conectar com o banco de dados e iniciar.
 
 Para facilitar o uso, execute, em outro terminal, o programa 
 
-``
-node preencheBD.js
-``
+``node preencheBD.js``
+
+para popular o banco de dados com alguns itens. Só é necessário executar esse programa uma vez.
 
 ### Utilização da aplicação
 ---
